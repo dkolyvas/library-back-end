@@ -1,0 +1,178 @@
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\appsettings.json
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\library_app.exe
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\library_app.deps.json
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\library_app.runtimeconfig.json
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\library_app.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\library_app.pdb
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Humanizer.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.csproj.AssemblyReference.cache
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.AssemblyInfoInputs.cache
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.AssemblyInfo.cs
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.csproj.CoreCompileInputs.cache
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets\msbuild.library_app.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets\msbuild.build.library_app.props
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.library_app.props
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.library_app.props
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\scopedcss\bundle\library_app.styles.css
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.csproj.CopyComplete
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.dll
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\refint\library_app.dll
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.pdb
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.genruntimeconfig.cache
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net6.0\ref\library_app.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.csproj.AssemblyReference.cache
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.AssemblyInfoInputs.cache
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.AssemblyInfo.cs
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.csproj.CoreCompileInputs.cache
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\refint\library_app.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.pdb
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\appsettings.json
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\library_app.exe
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\library_app.deps.json
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\library_app.runtimeconfig.json
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\library_app.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\library_app.pdb
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Humanizer.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets\msbuild.library_app.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets\msbuild.build.library_app.props
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.library_app.props
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.library_app.props
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\scopedcss\bundle\library_app.styles.css
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.csproj.CopyComplete
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\library_app.genruntimeconfig.cache
+C:\Users\kolyv\OneDrive\Desktop\Coding Factory 4\source\repos\library_app\library_app\obj\Debug\net6.0\ref\library_app.dll
