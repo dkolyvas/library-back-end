@@ -39,5 +39,14 @@ namespace library_app.Repositories
             return book;
         }
 
+        public async Task<bool> DeleteBook(int id)
+        {
+            var book = await _context.Books.Where(b => b.Id == id).Include(b => b.Borrowings).FirstOrDefaultAsync();
+            if(book is null) return false;
+            _context.Borrowings.RemoveRange(book.Borrowings);
+            _context.Books.Remove(book);
+            return true;
+        }
+
     }
 }

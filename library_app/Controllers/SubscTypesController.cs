@@ -1,6 +1,7 @@
 ﻿using library_app.DTO;
 using library_app.Exceptions;
 using library_app.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,13 +12,16 @@ namespace library_app.Controllers
     public class SubscTypesController : ControllerBase
     {
         private IAppServices _services;
+        private ILogger<SubscTypesController> _logger;
         public List<String> Errors = new();
 
-        public SubscTypesController(IAppServices services)
+        public SubscTypesController(IAppServices services, ILogger<SubscTypesController> logger)
         {
             _services = services;
+            _logger = logger;
         }
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<SubscriptionTypeShowDTO>>> GetAll()
         {
             try
@@ -27,11 +31,13 @@ namespace library_app.Controllers
             }
            catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return Problem(ex.Message);
             }
 
         }
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<SubscriptionTypeShowDTO>> GetOne(int id)
         {
             try
@@ -41,14 +47,17 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
         [HttpPost]
+        [Authorize(Roles ="admin")]
         public async Task<ActionResult<SubscriptionTypeShowDTO>> Insert(SubscriptionTypeInsertDTO insertDTO)
         {
             if(!ModelState.IsValid)
@@ -64,17 +73,20 @@ namespace library_app.Controllers
             }
             try
             {
+
                 var result = await _services.SubscriptionTypeService.Insert(insertDTO);
                 return CreatedAtAction("GetOne", new { id = result.Id }, result);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
 
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult<SubscriptionTypeShowDTO>> Update(int id,  SubscriptionTypeUpdateDTO updateDTO)
         {
 
@@ -100,16 +112,19 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
 
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult> Delete(int id)
         {
             try
@@ -119,11 +134,13 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
 
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }

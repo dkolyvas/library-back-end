@@ -5,9 +5,12 @@ using library_app.Utility;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
+using Serilog.Events;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using static System.Net.WebRequestMethods;
+
 
 namespace library_app
 {
@@ -18,7 +21,22 @@ namespace library_app
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            object value = builder.Host.UseSerilog((context,config)=>
+            {
+                config
+                    .MinimumLevel.Debug()
+                    .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+                    .Enrich.FromLogContext()
+                    .WriteTo.Console()
+                    .WriteTo.File(
+                        "Logs/logs.txt",
+                        rollingInterval: RollingInterval.Day,
+                        outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} {SourceContext}" +
+                        "[{Level}] {Message}{NewLine}{Exception}",
+                        retainedFileCountLimit: null,
+                        fileSizeLimitBytes: null
+                    );
+            });
             builder.Services.AddControllers();
             string connectionString = builder.Configuration.GetConnectionString("DefaultConnection")!;
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

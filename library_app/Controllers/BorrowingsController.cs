@@ -1,6 +1,7 @@
 ﻿using library_app.DTO;
 using library_app.Exceptions;
 using library_app.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,13 +9,16 @@ namespace library_app.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class BorrowingsController : ControllerBase
     {
         private IAppServices _services;
+        private ILogger<BorrowingsController> _logger;
 
-        public BorrowingsController(IAppServices services)
+        public BorrowingsController(IAppServices services, ILogger<BorrowingsController> logger)
         {
             _services = services;
+            _logger = logger;
         }
         [HttpGet("Member/{memberId}")]
         public async Task<ActionResult<IEnumerable<BorrowingShowDTO>>> GetAllForMember(int memberId)
@@ -26,6 +30,7 @@ namespace library_app.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return Problem(ex.Message);
             }
         }
@@ -40,6 +45,7 @@ namespace library_app.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return Problem(ex.Message);
             }
         }
@@ -53,10 +59,12 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
@@ -70,6 +78,7 @@ namespace library_app.Controllers
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
@@ -84,10 +93,12 @@ namespace library_app.Controllers
             }
             catch (BorrowingNotAllowedException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
@@ -102,10 +113,12 @@ namespace library_app.Controllers
             }
             catch(BorrowingNotAllowedException e)
             {
+                _logger.LogError(e.Message);
                 return BadRequest(e.Message);
             }
             catch (Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
@@ -119,14 +132,17 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(BorrowingNotAllowedException e)
             {
+                _logger.LogError(e.Message);
                 return BadRequest(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
@@ -141,10 +157,12 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message) ;
             }
         }
@@ -159,10 +177,12 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
@@ -176,6 +196,7 @@ namespace library_app.Controllers
             }
             catch(Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return Problem(ex.Message);
             }
             

@@ -1,6 +1,7 @@
 ﻿using library_app.DTO;
 using library_app.Exceptions;
 using library_app.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,13 +12,16 @@ namespace library_app.Controllers
     public class CategoriesController : ControllerBase
     {
         private IAppServices _services;
+        private ILogger<CategoriesController> _logger;
 
-        public CategoriesController(IAppServices services)
+        public CategoriesController(IAppServices services, ILogger<CategoriesController> logger)
         {
             _services = services;
+            _logger = logger;
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<CategoryShowDTO>>> GetAll()
         {
             try
@@ -27,11 +31,13 @@ namespace library_app.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return Problem(ex.Message);
             }
         }
 
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<CategoryShowDTO>> GetOne(int id)
         {
             try
@@ -41,15 +47,18 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return Problem(ex.Message);
             }
         }
 
         [HttpPost]
+        [Authorize(Roles ="admin")]
         public async Task<ActionResult<CategoryShowDTO>> Insert(CategoryInsertDTO insertDTO)
         {
             if (!ModelState.IsValid)
@@ -60,16 +69,19 @@ namespace library_app.Controllers
             }
             try
             {
+
                 var result = await _services.CategoryService.Insert(insertDTO.categoryName);
                 return CreatedAtAction("GetOne", new { id = result.Id }, result);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
 
         }
         [HttpPut("{id}")]
+        [Authorize(Roles ="admin")]
         public async Task<ActionResult<CategoryUpdateDTO>> Update(int id, CategoryUpdateDTO updateDTO)
         {
             if (!ModelState.IsValid)
@@ -89,15 +101,18 @@ namespace library_app.Controllers
             }
             catch (EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
 
         }
         [HttpDelete("{id}")]
+        [Authorize(Roles = "admin")]
         public async Task<ActionResult> Delete(int id)
         {
             try
@@ -107,10 +122,12 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message) ;
             }
         }

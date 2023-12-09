@@ -1,6 +1,7 @@
 ﻿using library_app.DTO;
 using library_app.Exceptions;
 using library_app.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,14 +9,17 @@ namespace library_app.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class SubscriptionsController : ControllerBase
     {
         private IAppServices _services;
+        private ILogger<SubscriptionsController> _logger;
         public List<string> Errors = new();
 
-        public SubscriptionsController(IAppServices services)
+        public SubscriptionsController(IAppServices services, ILogger<SubscriptionsController> logger)
         {
             _services = services;
+            _logger = logger;
         }
 
         [HttpGet("{id}")]
@@ -28,6 +32,7 @@ namespace library_app.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return Problem(ex.Message);
             }
         }
@@ -41,10 +46,12 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             } 
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
@@ -58,6 +65,7 @@ namespace library_app.Controllers
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
@@ -71,6 +79,7 @@ namespace library_app.Controllers
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
@@ -85,10 +94,12 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
@@ -103,10 +114,12 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }

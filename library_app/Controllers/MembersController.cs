@@ -1,6 +1,7 @@
 ﻿using library_app.DTO;
 using library_app.Exceptions;
 using library_app.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,14 +9,17 @@ namespace library_app.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class MembersController : ControllerBase
     {
         private IAppServices _services;
         public string? Errors;
+        private ILogger<MembersController> _logger; 
 
-        public MembersController(IAppServices appServices)
+        public MembersController(IAppServices appServices, ILogger<MembersController> logger)
         {
             this._services = appServices;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -37,6 +41,7 @@ namespace library_app.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return Problem(ex.Message);
             }
 
@@ -52,10 +57,12 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException ex)
             {
+                _logger.LogError(ex.Message);
                 return NotFound(ex.Message);
             }
             catch(Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return Problem(ex.Message);
             }
         }
@@ -70,10 +77,12 @@ namespace library_app.Controllers
             }
             catch (EntityNotFoundException ex)
             {
+                _logger.LogError(ex.Message);
                 return NotFound(ex.Message);
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex.Message);
                 return Problem(ex.Message);
             }
         }
@@ -99,10 +108,12 @@ namespace library_app.Controllers
             }
             catch(EmailExistsException e)
             {
+                _logger.LogError(e.Message);
                 return BadRequest(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
 
@@ -133,14 +144,17 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(EmailExistsException e)
             {
+                _logger.LogError(e.Message);
                 return BadRequest(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
@@ -155,10 +169,12 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }

@@ -11,6 +11,7 @@ namespace library_app.Services
         public Task<UserShowDTO?> UpdateUser(UserUpdateDTO dto);
         public Task<UserShowDTO?> GetUserByUsername(string username);
         public Task<List<UserShowDTO>> GetAllUsers();
+        public Task<bool> DeleteUser(int id);
 
     }
 }

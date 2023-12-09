@@ -11,6 +11,7 @@ namespace library_app.Repositories
             public Task<User?> Login(string email, string password);
             public Task<User?> GetByUsername(string username);
             public Task<User?> UpdateUser(UserUpdateDTO dto);
+            public Task<User?> DeleteUser(int id);
         }
 
     }

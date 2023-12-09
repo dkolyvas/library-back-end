@@ -19,7 +19,7 @@ namespace library_app.Services
 
         public async Task<bool> DeleteBook(int id)
         {
-            bool result = await _repositories.BookRepository.Delete(id);
+            bool result = await _repositories.BookRepository.DeleteBook(id);
             if (!result) throw new EntityNotFoundException("book");
             result = await _repositories.SaveChanges();
             return result;

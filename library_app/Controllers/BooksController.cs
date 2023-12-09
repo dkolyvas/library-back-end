@@ -9,14 +9,17 @@ namespace library_app.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class BooksController : ControllerBase
     {
         private IAppServices _services;
         public string? errors ;
+        private ILogger<BooksController> _logger;
 
-        public BooksController(IAppServices services)
+        public BooksController(IAppServices services, ILogger<BooksController> logger)
         {
             _services = services;
+            _logger = logger;
         }
         [Authorize]
         [HttpGet]
@@ -38,7 +41,7 @@ namespace library_app.Controllers
             }
             catch (Exception ex)
             {
-                
+                _logger.LogError(ex.Message);
                 return Problem(ex.Message);
             }
 
@@ -53,12 +56,13 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 errors += e.Message + " | ";
                 return NotFound(errors);
             }    
             catch(Exception ex)
             {
-                
+                _logger.LogError(ex.Message);
                 return Problem(ex.Message);
             }
         }
@@ -84,7 +88,7 @@ namespace library_app.Controllers
             }
             catch(Exception e)
             {
-                
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
@@ -114,6 +118,7 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception ex)
@@ -132,10 +137,14 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
-            catch(Exception e)
-            {
+            catch(Exception e) 
+            { 
+
+                _logger.LogError(e.Message);
+
                 return Problem(e.Message);
             }
         }

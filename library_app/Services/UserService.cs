@@ -64,10 +64,18 @@ namespace library_app.Services
             }
 
             user = await _repositories.UserRepository.UpdateUser(dto);
+        
             await _repositories.SaveChanges();
             return _mapper.Map<UserShowDTO?>(user);
         }
 
+        public async Task<bool> DeleteUser(int id)
+        {
+           bool isDone = await _repositories.UserRepository.DeleteUser(id);
+            if (!isDone) throw new EntityNotFoundException("user");
+            isDone = await _repositories.SaveChanges();
+            return isDone;
+        }
     }
 }
 

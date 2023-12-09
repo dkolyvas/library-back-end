@@ -12,6 +12,7 @@ using library_app.DTO;
 using library_app.Exceptions;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using System.ComponentModel;
+using Microsoft.AspNetCore.Authorization;
 
 namespace library_app.Controllers
 {
@@ -21,12 +22,14 @@ namespace library_app.Controllers
     {
         private IAppServices services;
         private IConfiguration configuration;
+        private ILogger<UsersController> _logger;
         public string? Errors;
 
-        public UsersController(IAppServices services, IConfiguration configuration)
+        public UsersController(IAppServices services, IConfiguration configuration, ILogger<UsersController> logger)
         {
             this.services = services;
             this.configuration = configuration;
+            this._logger = logger;
         }
         [HttpPost("Login")]
         public async Task<IActionResult> Login(UserLoginDTO credentials)
@@ -53,6 +56,7 @@ namespace library_app.Controllers
                 }
                 catch (Exception ex) 
                 {
+                    _logger.LogError(ex.Message);
                     if (ex is EntityNotFoundException || ex is IncorrectPasswordException)
                     {
                         return Unauthorized(ex.Message);
@@ -65,6 +69,7 @@ namespace library_app.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles ="admin")]
         public async Task<ActionResult<UserShowDTO>> Register(UserRegisterDTO registerDTO)
         {
             if (!ModelState.IsValid)
@@ -85,6 +90,7 @@ namespace library_app.Controllers
             }
             catch(Exception ex)
             {
+                _logger.LogError(ex.Message);
                 if(ex is UserExistsException)
                 {
                     return BadRequest(ex.Message);
@@ -96,6 +102,7 @@ namespace library_app.Controllers
             }
         }
         [HttpGet("{username}")]
+        [Authorize]
         public async Task<ActionResult<UserShowDTO>> GetUser(string username)
         {
             try
@@ -105,15 +112,18 @@ namespace library_app.Controllers
             }
             catch(EntityNotFoundException e)
             {
+                _logger.LogError(e.Message);
                 return NotFound(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return BadRequest(e.Message);
             }
         }
 
         [HttpGet]
+        [Authorize(Roles ="admin")]
         public async Task<ActionResult<IEnumerable<UserShowDTO>>> GetAll()
         {
             try
@@ -123,11 +133,13 @@ namespace library_app.Controllers
             }
             catch (Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
             }
         }
 
         [HttpPut("{username}")]
+        [Authorize]
         public async Task<ActionResult<UserShowDTO>> UpdateUser(string username, UserUpdateDTO updateDTO)
         {
             if(username != updateDTO.Username)
@@ -153,15 +165,41 @@ namespace library_app.Controllers
             }
             catch(IncorrectPasswordException e)
             {
+                _logger.LogError(e.Message);
                 return Unauthorized(e.Message);
             }
             catch(UnableToConfirmPasswordException e)
             {
+                _logger.LogError(e.Message);
                 return BadRequest(e.Message);
             }
             catch(Exception e)
             {
+                _logger.LogError(e.Message);
                 return Problem(e.Message);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        [Authorize(Roles ="admin")]
+        public async Task<ActionResult> DeleteUser(int id)
+        {
+            try
+            {
+                var result = await services.UserService.DeleteUser(id);
+                if (!result) Problem("Unable to save data");
+                return Ok();
+
+            }
+            catch(EntityNotFoundException e)
+            {
+                _logger.LogError(e.Message);
+                return NotFound(e.Message);
+            }
+            catch(Exception e)
+            {
+                _logger.LogError(e.Message);
+                return BadRequest(e.Message);
             }
         }
         

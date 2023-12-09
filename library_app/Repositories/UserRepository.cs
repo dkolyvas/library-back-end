@@ -41,15 +41,37 @@ namespace library_app.Repositories
         {
             User? user = await _context.Users.FirstOrDefaultAsync(u => u.Username == dto.Username);
             if (user is null) throw new EntityNotFoundException("user");
-            if (dto.OldPassword is null ||dto.NewPassword is null || !Encryption.confirmPassword(dto.OldPassword, user.Password))
+            User? updatedUser = new();
+            if (dto.OldPassword is null || !Encryption.confirmPassword(dto.OldPassword, user.Password))
             {
                 throw new IncorrectPasswordException();
             }
-            user.Password = Encryption.Encrypt(dto.NewPassword);
-            user.Name = dto.Name;
-            user.Surname = dto.Surname;
-            await Update(user, user.Id);
+            updatedUser.Id = user.Id;
+            updatedUser.Username = user.Username;
+            if (dto.NewPassword != null)
+            {
+                updatedUser.Password = Encryption.Encrypt(dto.NewPassword);
+            }
+            else updatedUser.Password = user.Password;
+            updatedUser.Name = dto.Name;
+            updatedUser.Surname = dto.Surname;
+            _context.Entry(user).CurrentValues.SetValues(updatedUser);
+            _context.Entry(user).State = EntityState.Modified;
+            await Console.Out.WriteLineAsync(user.ToString());
+
             return user;
+
+            
+            
+
+        }
+
+        public async Task<bool> DeleteUser(int id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if(user is null) return false;
+            _context.Users.Remove(user);
+            return true;
 
         }
 

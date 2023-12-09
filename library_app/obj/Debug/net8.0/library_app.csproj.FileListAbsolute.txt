@@ -138,3 +138,13 @@ C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net8.0\refint\libr
 C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net8.0\library_app.pdb
 C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net8.0\library_app.genruntimeconfig.cache
 C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net8.0\ref\library_app.dll
+C:\Users\kolyv\source\repos\library_app\library_app\obj\Debug\net8.0\library_app.sourcelink.json
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net8.0\Serilog.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\kolyv\source\repos\library_app\library_app\bin\Debug\net8.0\Serilog.Sinks.File.dll

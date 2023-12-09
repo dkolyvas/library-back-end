@@ -19,7 +19,7 @@ namespace library_app.Services
 
         public async Task<bool> DeleteMember(int id)
         {
-            bool result = await _repositories.MemberRepository.Delete(id);
+            bool result = await _repositories.MemberRepository.DeleteMember(id);
             if (!result) throw new EntityNotFoundException("member");
             result = await _repositories.SaveChanges();
             return result;
