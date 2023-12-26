@@ -1,0 +1,22 @@
+2023-12-25 17:55:15.428 +02:00 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[Information] User profile is available. Using '"C:\Users\kolyv\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-25 17:55:15.792 +02:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "https://localhost:5001"
+2023-12-25 17:55:15.794 +02:00 Microsoft.Hosting.Lifetime[Information] Now listening on: "http://localhost:5000"
+2023-12-25 17:55:15.797 +02:00 Microsoft.Hosting.Lifetime[Information] Application started. Press Ctrl+C to shut down.
+2023-12-25 17:55:15.798 +02:00 Microsoft.Hosting.Lifetime[Information] Hosting environment: "Development"
+2023-12-25 17:55:15.799 +02:00 Microsoft.Hosting.Lifetime[Information] Content root path: "C:\Users\kolyv\source\repos\library_app\library_app"
+2023-12-25 17:55:21.442 +02:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:5001""""/swagger/index.html""" - null null
+2023-12-25 17:55:21.943 +02:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:5001""""/swagger/index.html""" - 200 null "text/html;charset=utf-8" 507.3097ms
+2023-12-25 17:55:21.952 +02:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:5001""""/_framework/aspnetcore-browser-refresh.js""" - null null
+2023-12-25 17:55:21.954 +02:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:5001""""/_vs/browserLink""" - null null
+2023-12-25 17:55:21.990 +02:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:5001""""/_framework/aspnetcore-browser-refresh.js""" - 200 13758 "application/javascript; charset=utf-8" 41.1643ms
+2023-12-25 17:55:22.072 +02:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:5001""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 118.09ms
+2023-12-25 17:55:22.244 +02:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request starting "HTTP/2" "GET" "https"://"localhost:5001""""/swagger/v1/swagger.json""" - null null
+2023-12-25 17:55:22.469 +02:00 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[Error] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - library_app.Controllers.UsersController.CreateUserToken (library_app). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-25 17:55:22.550 +02:00 Microsoft.AspNetCore.Hosting.Diagnostics[Information] Request finished "HTTP/2" "GET" "https"://"localhost:5001""""/swagger/v1/swagger.json""" - 500 null "text/plain; charset=utf-8" 305.8587ms
